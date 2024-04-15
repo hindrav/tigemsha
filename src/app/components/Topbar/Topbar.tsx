@@ -12,7 +12,7 @@ const Topbar = () => {
                 <span className="uppercase text-3xl ml-3" >Tigemsha</span>
             </Box>
             <Box className="tb-contact">
-                <a href="https://wa.link/qwajkq" className="uppercase text-xl mr-3 text-white"><WhatsApp sx={{ fontSize: "2rem", marginRight: "1rem" }}/>Contactar</a>
+                <a href="https://wa.link/qwajkq" className="uppercase text-xl mr-3"><WhatsApp sx={{ fontSize: "2rem", marginRight: "1rem" }}/>Contactar</a>
             </Box>
         </Box>
     </Box>

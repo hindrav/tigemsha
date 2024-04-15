@@ -1,31 +1,30 @@
 @import "../../assets/scss/main.scss";
 
 .client-carousel-container {
-    background-image: linear-gradient(to bottom, #030303, #0a0a0a,#0D1017);
-    overflow: hidden;
-    width: 100%;
-    padding: 5rem 0 3rem 0;
+  background-image: linear-gradient(to bottom, #030303, #0a0a0a, #0d1017);
+  overflow: hidden;
+  width: 100%;
+  padding: 5rem 0 3rem 0;
+}
+
+.client-carousel {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .client-carousel {
-    display: flex;
-    animation: scroll 20s linear infinite; /* Controla la velocidad y la dirección del desplazamiento */
+  100% {
+    transform: translateX(-100%);
   }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Mueve el carrusel una vez el ancho de una imagen hacia la izquierda */
-    }
-  }
-  
-  .client-carousel img {
-    width: 20rem;
-    height: 7rem;
-    object-fit: cover;
-    filter: grayscale(1);
-    margin-right: 10rem; /* Espacio entre imágenes */
-  }
-  
+}
+
+.client-carousel img {
+  width: 20rem;
+  height: 7rem;
+  object-fit: cover;
+  filter: grayscale(1);
+  margin-right: 10rem;
+}

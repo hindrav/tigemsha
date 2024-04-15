@@ -6,7 +6,7 @@
     z-index: 99;
     height: 7rem;
     width: 100%;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     &-container{
         display: flex;
         flex-direction: row;
@@ -25,5 +25,14 @@
     &-contact{
         display: flex;
         align-items: center;
+        & a{
+            color: $gray;
+        }
+    }
+}
+
+@include bp-tab{
+    .tb{
+        padding: 3rem 4rem;
     }
 }
